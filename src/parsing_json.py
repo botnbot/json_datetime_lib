@@ -7,7 +7,6 @@ def get_data(path: str) -> list[dict]:
     with open(path, "r") as datafile:
         return load(datafile)
 
-
 def get_weekdays_sales(data: list[dict]) -> dict:
     """Функция принимает список словарей с продажами и возвращает словарь, где ключи - это даты, а значения - данные
     о продажах в этот день"""
